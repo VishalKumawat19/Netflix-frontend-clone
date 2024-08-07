@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #495057;
+    flex-direction: column;
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Roboto',sans-serif;
+    /* cursor: none; */
+}
+
+:root {
+    --primary-text-color : white;
+
+}
+
+
+/* utility classes */
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.red-btn{
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+    padding:10px;
+    padding-inline: 16px;
+    border: none;
+    border-radius:6px;
+    font-weight:600;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+p{
+    font-size: 1.7rem;
+}
+
+.all-section {
+    margin-top: 10px;
+    width: 100vw;
+    height:600px;
+    justify-content: space-around;
+    background-color: black;
+    padding-inline: 190px;
+}
+
+ul, a ,.footer-q-call{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Home Section */
+.main-page{
+    height: 100vh;
+    width: 99vw;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)),url("assests/Netflix-background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+/* nav section */
+
+
+.nav-bar {
+    height: 92px;
+    width: 100vw;
+    padding: 5px 160px;
+}
+
+.logo img {
+height: 80px;
+width: 190px;
+z-index: 1;
+}
+
+option{
+    background-color: white;
+    color: black;
+}
+
+/* option:hover{
+    background-color: blue;
+} */
+
+.lan-sgnin{
+    gap: 24px;
+    
+}
+
+.lang-options{
+    padding-inline: 32px;
+    padding-block: 7px;
+    border-radius:5px ;
+   background-color: black;
+   color: white;
+   font-size: 1rem;
+}
+
+.lang-options:hover{
+    border: 2px solid white;
+}
+
+.front-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: calc(100vh-92px);
+    width: 100vw;
+    gap: 20px;
+    margin-top: 210px;
+   
+}
+
+.register{
+    gap: 20px;
+}
+
+/* .input-box{
+   
+    width: 400px;
+    height: 60px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid gray;
+    padding-block:  10px;
+    padding-inline:  2px 24px;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255,0.7);
+}
+
+.email{
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255,0.7);
+    
+    
+}
+
+
+label{
+    padding-top: 0px;
+    padding-left: 5px;
+    /* display: block; */
+    /* transition: transform 0.5s ease-out;
+}
+
+input:focus + label {
+    transform: translateY(-20px) scale(0.8);
+}
+
+input:focus{
+bottom: 2px;
+}  */
+
+.form-group {
+    overflow: hidden;
+    width: 400px;
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255,0.7);
+
+}
+
+label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(-2px,-50%);
+    transition: transform 0.3s ease-out, font-size 0.3s ease-out;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255,0.7);
+}
+
+/* Style for the label when the input is focused */
+input:focus + label {
+    transform: translate(0px,-120%) scale(0.8);
+    font-size: 1em;
+}
+
+input:focus{
+    font-size: 1.2rem;
+    transform: translate(15px,5px);
+}
+.ger-started{
+    padding-inline: 30px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: -20px;
+   
+}
+
+.red-btn:hover {
+    background-color:rgba(230, 0, 0, 0.8) ;
+}
+
+/* enjoy section */
+
+.tv{
+    width: 486px;
+    height: 350px;
+}
+
+.tv img{
+    width: 486px;
+    height: 360px;
+    
+}
+
+.description{
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* faq section */
+
+.faq{
+    width: 100vw;
+    height: 950px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.faq-heading{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.faq-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-ques{
+    height: 84px;
+    width: 1170px;
+    background-color:#212529;
+    margin-bottom:10px ;
+    font-size: 1.7rem;
+    padding: 24px;
+}
+
+.faq-ques i{
+    font-size: 2rem;
+}
+
+.faq-ques:hover {
+    background-color:#343A40;
+    cursor: pointer;
+}
+
+.faq-container i {
+    float: right ;
+}
+
+.register-on-faq{
+    margin-top: 60px;
+   
+}
+
+/* footer section */
+
+
+
+ul{
+    list-style-type: none;
+    text-align: start;
+}
+
+.footer-container{
+    height: 500px;
+    width: 100vw;
+    background-color: black;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links-container{
+    margin-inline: 100px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 150px;
+    margin-inline: 100px;
+}
+
+.ul-links li{
+    
+    margin-block: 20px;
+ 
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+
+.footer-q-call{
+    width: 66vw;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+
+.f-links{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/* script classes */
+
+/* email handle */
+
+.emaile-handle{
+    font-size: 0.2rem;
+}
+
+/* faq handle */
+
+.answer-div {
+    display: none;
+    height:auto;
+    width: 1170px;
+    background-color:#343A40;
+    margin-bottom:10px ;
+    font-size: 1.7rem;
+    padding: 24px;
+}
+
+.show-answer{
+    display: block;
+}
+
+
+
+
